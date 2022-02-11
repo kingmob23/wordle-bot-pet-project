@@ -1,5 +1,5 @@
 # wordle-bot-pet-project
-a bot that will play in the wordle instead of you
+a bot that will play in wordle instead of you
 
 Прямое взаимодействие скрипта с сайтом пока не разработано. Скрипт пытается угадать загаданное слово, предлагает варианты, их нужно руками вставить на сайт, после чего написать в input ответ с сайта.
 
