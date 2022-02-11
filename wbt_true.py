@@ -48,8 +48,9 @@ def search_for_a_word(list_of_words, must_not_contain):
 
 
 def partial_success():
-    missing_letters = input('нету \n').split()
-    guessed_letters_input = input('там, буква позиция \n').split()
+    missing_letters = input('введи буквы отсутствующие в слове \n').split()
+    prompt = 'введи буквы угаданные буквы на верных позициях в формате буква позиция через пробел \n'
+    guessed_letters_input = input(prompt).split()
     letters = []
     positions = []
     for p in guessed_letters_input[::2]:
@@ -79,11 +80,11 @@ while response != 'win':
     response = input('Что выдало? \n')
 
     if response == 'nsw':  # nsw means there is no such word
-        print('ПУКНИ В ЛУЖУ')
+        print('этот сценарий пока не готов')
         # with open('n5.txt', 'rw', encoding='Windows-1251') as file:
         #     content_2 = file.read()
         #     content_2.remove(attempt)
     elif response == '50':  # 50 means partial success, part of the letters are correct
         letters_that_are_not_there, here_we_count, good_letters = partial_success()
 
-print('конграц!')
+print('поздравляю с победой!')
